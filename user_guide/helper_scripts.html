@@ -6,13 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Helper scripts &#8212; HemoCell 2.6 documentation</title>
+    <title>Helper scripts &#8212; HemoCell 2.7 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -32,7 +33,7 @@
         <li class="right" >
           <a href="xml_files.html" title="Configuration Files"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Helper scripts</a></li> 
       </ul>
     </div>  
@@ -43,10 +44,10 @@
           <div class="body" role="main">
             
   <section id="helper-scripts">
-<h1>Helper scripts<a class="headerlink" href="#helper-scripts" title="Permalink to this headline">¶</a></h1>
+<h1>Helper scripts<a class="headerlink" href="#helper-scripts" title="Permalink to this heading">¶</a></h1>
 <p>A number of helper scripts for working with HemoCell.</p>
 <section id="hemocell-patch-patchplb-sh">
-<span id="patching-palabos"></span><h2>hemocell/patch/patchPLB.sh<a class="headerlink" href="#hemocell-patch-patchplb-sh" title="Permalink to this headline">¶</a></h2>
+<span id="patching-palabos"></span><h2>hemocell/patch/patchPLB.sh<a class="headerlink" href="#hemocell-patch-patchplb-sh" title="Permalink to this heading">¶</a></h2>
 <p>HemoCell is build on top of Palabos and has added a number of additional
 features to the source of Palabos. These additional features are contained as a
 <a class="reference external" href="https://en.wikipedia.org/wiki/Patch_(Unix)">patch</a> file in
@@ -58,7 +59,7 @@ features to the source of Palabos. These additional features are contained as a
 </div>
 </section>
 <section id="hemocell-scripts-batchpostprocess-sh">
-<span id="bpp"></span><h2>hemocell/scripts/batchPostProcess.sh<a class="headerlink" href="#hemocell-scripts-batchpostprocess-sh" title="Permalink to this headline">¶</a></h2>
+<span id="bpp"></span><h2>hemocell/scripts/batchPostProcess.sh<a class="headerlink" href="#hemocell-scripts-batchpostprocess-sh" title="Permalink to this heading">¶</a></h2>
 <p>This scripts uses the <code class="docutils literal notranslate"><span class="pre">*XMF.py</span></code> files to generate all necessary xmf-files so
 that the output of a job can be read into ParaView and others. This script
 should be run within the <code class="docutils literal notranslate"><span class="pre">hemocell/examples/&lt;case&gt;</span></code> or
@@ -69,7 +70,7 @@ should be run within the <code class="docutils literal notranslate"><span class=
 </div>
 </section>
 <section id="hemocell-scripts-cartesius-intel-env-sh">
-<h2>hemocell/scripts/cartesius[_intel]_env.sh<a class="headerlink" href="#hemocell-scripts-cartesius-intel-env-sh" title="Permalink to this headline">¶</a></h2>
+<h2>hemocell/scripts/cartesius[_intel]_env.sh<a class="headerlink" href="#hemocell-scripts-cartesius-intel-env-sh" title="Permalink to this heading">¶</a></h2>
 <p>These files contain the corresponding build dependencies on the Cartesius system
 of SurfSara. They should be sourced instead of executed:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">cartesius_env</span><span class="o">.</span><span class="n">sh</span>
@@ -77,7 +78,7 @@ of SurfSara. They should be sourced instead of executed:</p>
 </div>
 </section>
 <section id="hemocell-scripts-cellinfomergecsv-sh">
-<span id="ccsv"></span><h2>hemocell/scripts/CellInfoMergeCSV.sh<a class="headerlink" href="#hemocell-scripts-cellinfomergecsv-sh" title="Permalink to this headline">¶</a></h2>
+<span id="ccsv"></span><h2>hemocell/scripts/CellInfoMergeCSV.sh<a class="headerlink" href="#hemocell-scripts-cellinfomergecsv-sh" title="Permalink to this heading">¶</a></h2>
 <p>This script merges the CSV output from multiple processors into a single one in
 the current directory. Use it in the <code class="docutils literal notranslate"><span class="pre">tmp</span></code> directory like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">hemocell</span><span class="o">/</span><span class="n">examples</span><span class="o">/&lt;</span><span class="n">case</span><span class="o">&gt;/</span><span class="n">tmp</span><span class="o">/</span>
@@ -86,7 +87,7 @@ the current directory. Use it in the <code class="docutils literal notranslate">
 </div>
 </section>
 <section id="convert-xmf-to-x3d-py">
-<span id="helper-scripts-xmf-to-x3d"></span><h2>convert_xmf_to_x3d.py<a class="headerlink" href="#convert-xmf-to-x3d-py" title="Permalink to this headline">¶</a></h2>
+<span id="helper-scripts-xmf-to-x3d"></span><h2>convert_xmf_to_x3d.py<a class="headerlink" href="#convert-xmf-to-x3d-py" title="Permalink to this heading">¶</a></h2>
 <p>This script converts generated <code class="docutils literal notranslate"><span class="pre">*.xmf</span></code> particle files (RBC, PLT, etc.) to the
 X3D format for rendering purposes, e.g. using <a class="reference internal" href="visualization.html#blender"><span class="std std-ref">Blender</span></a>. The
 script creates a <code class="docutils literal notranslate"><span class="pre">x3d</span></code> directory in the output directory of an example case
@@ -159,7 +160,7 @@ optional arguments:
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -176,13 +177,13 @@ optional arguments:
         <li class="right" >
           <a href="xml_files.html" title="Configuration Files"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Helper scripts</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>

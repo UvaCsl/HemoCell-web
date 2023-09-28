@@ -18,6 +18,6 @@ var searchData=
   ['constantconversion_2eh_15',['constantConversion.h',['../constantConversion_8h.html',1,'']]],
   ['contrib_2emd_16',['CONTRIB.md',['../CONTRIB_8md.html',1,'']]],
   ['csvconcatenate_2epy_17',['csvConcatenate.py',['../csvConcatenate_8py.html',1,'']]],
-  ['cube_2ecpp_18',['cube.cpp',['../cube_8cpp.html',1,'']]],
+  ['cube_2ecpp_18',['cube.cpp',['../examples_2cube_2cube_8cpp.html',1,'(Global Namespace)'],['../tests_2performance_2weak__scaling_2cube_8cpp.html',1,'(Global Namespace)']]],
   ['curvedflow_5fwith_5fpreinlet_2ecpp_19',['curvedflow_with_preinlet.cpp',['../curvedflow__with__preinlet_8cpp.html',1,'']]]
 ];

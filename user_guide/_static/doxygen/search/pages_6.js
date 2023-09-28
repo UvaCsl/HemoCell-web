@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['templates_0',['Templates',['../md_examples_cube_preprocess_templates_README.html',1,'']]],
-  ['tests_1',['Tests',['../md_tests_README.html',1,'']]],
-  ['todo_2',['TODO',['../md_TODO.html',1,'']]]
+  ['list_20of_20contributors_0',['List of contributors',['../md_CONTRIB.html',1,'']]]
 ];

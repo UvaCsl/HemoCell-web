@@ -6,13 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Frequently Asked Questions &#8212; HemoCell 2.6 documentation</title>
+    <title>Frequently Asked Questions &#8212; HemoCell 2.7 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -32,7 +33,7 @@
         <li class="right" >
           <a href="Downloads.html" title="Downloads"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Frequently Asked Questions</a></li> 
       </ul>
     </div>  
@@ -43,46 +44,46 @@
           <div class="body" role="main">
             
   <section id="frequently-asked-questions">
-<h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h1>
+<h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this heading">¶</a></h1>
 <section id="q-my-cells-are-not-initialized-at-the-right-position">
-<h2>Q: My cells are not initialized at the right position<a class="headerlink" href="#q-my-cells-are-not-initialized-at-the-right-position" title="Permalink to this headline">¶</a></h2>
+<h2>Q: My cells are not initialized at the right position<a class="headerlink" href="#q-my-cells-are-not-initialized-at-the-right-position" title="Permalink to this heading">¶</a></h2>
 <p>This is possible due to the lattice spacing usually (unless defined otherwise)
 being 0.5 µm while the positions in the <code class="docutils literal notranslate"><span class="pre">.pos</span></code> file are in µm. This means
 that a cell center of <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">12</span> <span class="pre">24</span></code> in a <code class="docutils literal notranslate"><span class="pre">.pos</span></code> file will have a center of
 <code class="docutils literal notranslate"><span class="pre">20</span> <span class="pre">24</span> <span class="pre">48</span></code> in the simulation.</p>
 </section>
 <section id="q-can-the-cells-lie-out-of-the-domain">
-<h2>Q: Can the cells lie out of the domain?<a class="headerlink" href="#q-can-the-cells-lie-out-of-the-domain" title="Permalink to this headline">¶</a></h2>
+<h2>Q: Can the cells lie out of the domain?<a class="headerlink" href="#q-can-the-cells-lie-out-of-the-domain" title="Permalink to this heading">¶</a></h2>
 <p>Yes, cells are bound inside the domain by their centerpoints, so parts of the
 cell might reach over the domain. These cells are deleted during initialisation,
 unless the system is run on a single core.</p>
 </section>
 <section id="q-what-is-the-exact-centerpoint-of-the-domain-how-big-is-my-domain">
-<h2>Q: What is the exact centerpoint of the domain, how big is my domain?<a class="headerlink" href="#q-what-is-the-exact-centerpoint-of-the-domain-how-big-is-my-domain" title="Permalink to this headline">¶</a></h2>
+<h2>Q: What is the exact centerpoint of the domain, how big is my domain?<a class="headerlink" href="#q-what-is-the-exact-centerpoint-of-the-domain-how-big-is-my-domain" title="Permalink to this heading">¶</a></h2>
 <p>When you specify a domain of for example 10 cells, the exact
 middle will be <em>BETWEEN</em> cell 5 and 6. imagine that dx is 0.5µm then the domain
 is 9.5µm long, and the middle is 4.75µm. periodic boundaries of course add 1 dx
 back to the length.</p>
 </section>
 <section id="q-compiling-with-the-singularity-images-gives-an-error-within-cmake">
-<h2>Q: Compiling with the singularity images gives an error within Cmake<a class="headerlink" href="#q-compiling-with-the-singularity-images-gives-an-error-within-cmake" title="Permalink to this headline">¶</a></h2>
+<h2>Q: Compiling with the singularity images gives an error within Cmake<a class="headerlink" href="#q-compiling-with-the-singularity-images-gives-an-error-within-cmake" title="Permalink to this heading">¶</a></h2>
 <p>We have had reports that the clang (or llvm) compiler can cause problems with
 compiling the singularity image. Disabling it (removing it from the environment)
 or using another system might work. We are looking into this issue.</p>
 </section>
 <section id="q-compiling-with-singularity-gives-errors">
-<h2>Q: Compiling with singularity gives errors<a class="headerlink" href="#q-compiling-with-singularity-gives-errors" title="Permalink to this headline">¶</a></h2>
+<h2>Q: Compiling with singularity gives errors<a class="headerlink" href="#q-compiling-with-singularity-gives-errors" title="Permalink to this heading">¶</a></h2>
 <p>Maybe you have an old <code class="docutils literal notranslate"><span class="pre">hemocell/</span></code> folder in the same directory and are trying to compile with a newer version. If this is the case you can rename <code class="docutils literal notranslate"><span class="pre">hemocell/</span></code> to <code class="docutils literal notranslate"><span class="pre">hemocell_old</span></code> and the newer singularity image should create a new folder</p>
 </section>
 <section id="q-hemocell-seems-to-be-leaking-memory-over-time">
-<h2>Q: HemoCell seems to be leaking memory over time<a class="headerlink" href="#q-hemocell-seems-to-be-leaking-memory-over-time" title="Permalink to this headline">¶</a></h2>
+<h2>Q: HemoCell seems to be leaking memory over time<a class="headerlink" href="#q-hemocell-seems-to-be-leaking-memory-over-time" title="Permalink to this heading">¶</a></h2>
 <p>We have experienced similar issues when compiling and running with OpenMPI
 version 2.0.x, older or newer versions generally seem to be ok. We have tried to
 track down the issue with heaptrack and only found memory leaks within the MCA
 part of OpenMPI.</p>
 </section>
 <section id="q-including-custom-example-code-raises-undefined-reference">
-<h2>Q: Including custom example code raises: <code class="docutils literal notranslate"><span class="pre">undefined</span> <span class="pre">reference</span></code><a class="headerlink" href="#q-including-custom-example-code-raises-undefined-reference" title="Permalink to this headline">¶</a></h2>
+<h2>Q: Including custom example code raises: <code class="docutils literal notranslate"><span class="pre">undefined</span> <span class="pre">reference</span></code><a class="headerlink" href="#q-including-custom-example-code-raises-undefined-reference" title="Permalink to this heading">¶</a></h2>
 <p>This error might be encountered when linking external <code class="docutils literal notranslate"><span class="pre">*.h,*.cpp</span></code> files in
 addition to your example’s main <code class="docutils literal notranslate"><span class="pre">cpp</span></code>-file without referencing these
 files in the example’s <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file. Please refer to section
@@ -143,7 +144,7 @@ files in the example’s <code class="docutils literal notranslate"><span class=
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -160,13 +161,13 @@ files in the example’s <code class="docutils literal notranslate"><span class=
         <li class="right" >
           <a href="Downloads.html" title="Downloads"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Frequently Asked Questions</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>

@@ -6,13 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pipe flow with periodic inflow &#8212; HemoCell 2.6 documentation</title>
+    <title>Pipe flow with periodic inflow &#8212; HemoCell 2.7 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
@@ -32,7 +33,7 @@
         <li class="right" >
           <a href="pipeflow.html" title="Pipe flow"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" accesskey="U">Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Pipe flow with periodic inflow</a></li> 
       </ul>
@@ -44,20 +45,20 @@
           <div class="body" role="main">
             
   <section id="pipe-flow-with-periodic-inflow">
-<h1>Pipe flow with periodic inflow<a class="headerlink" href="#pipe-flow-with-periodic-inflow" title="Permalink to this headline">¶</a></h1>
+<h1>Pipe flow with periodic inflow<a class="headerlink" href="#pipe-flow-with-periodic-inflow" title="Permalink to this heading">¶</a></h1>
 <p>The example in <code class="docutils literal notranslate"><span class="pre">examples/pipeflow_with_preinlet</span></code> provides an extension of the
 <a class="reference internal" href="pipeflow.html#pipe-flow"><span class="std std-ref">pipe flow</span></a> example with the advanced
 <code class="docutils literal notranslate"><span class="pre">pre-inlet</span></code> boundary condition as discussed in the next section.</p>
 <p>After <a class="reference internal" href="../QuickStart.html#compilation"><span class="std std-ref">compilation</span></a>, the example can be run as:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># run the simulation from the `examples/pipeflow_with_preinlet` directory</span>
-<span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="mi">1</span> <span class="o">./</span><span class="n">pipeflow_with_preinlet</span> <span class="n">config</span><span class="o">.</span><span class="n">xml</span>
+<span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="mi">2</span> <span class="o">./</span><span class="n">pipeflow_with_preinlet</span> <span class="n">config</span><span class="o">.</span><span class="n">xml</span>
 
 <span class="c1"># generate Paraview compatible output files</span>
 <span class="o">../../</span><span class="n">scripts</span><span class="o">/</span><span class="n">batchPostProcess</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 </div>
 <section id="pre-inlet-boundary-condition">
-<h2>Pre-inlet boundary condition<a class="headerlink" href="#pre-inlet-boundary-condition" title="Permalink to this headline">¶</a></h2>
+<h2>Pre-inlet boundary condition<a class="headerlink" href="#pre-inlet-boundary-condition" title="Permalink to this heading">¶</a></h2>
 <p>The pre-inlet is one of the advanced boundary conditions in HemoCell and
 it provides a mean to generate a periodic influx of particles into the main
 simulation domain. This is of specific interest when normal periodicity on the
@@ -146,7 +147,7 @@ of the pre-inlet.</p>
 </div>
 </section>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
 <p>For basic configuration of the pipe flow, this example follows the same
 configuration settings as the original <a class="reference internal" href="pipeflow.html#pipe-flow"><span class="std std-ref">pipe flow</span></a> example, as discussed <a class="reference internal" href="pipeflow.html#configuration"><span class="std std-ref">here</span></a>.
 However, there are some pre-inlet specific parameters that can be modified:</p>
@@ -211,7 +212,7 @@ require to shift the original placements of the cells accordingly.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -228,14 +229,14 @@ require to shift the original placements of the cells accordingly.</p>
         <li class="right" >
           <a href="pipeflow.html" title="Pipe flow"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" >Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Pipe flow with periodic inflow</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>

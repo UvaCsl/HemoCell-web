@@ -6,13 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Repulsive forces &#8212; HemoCell 2.6 documentation</title>
+    <title>Repulsive forces &#8212; HemoCell 2.7 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
@@ -32,7 +33,7 @@
         <li class="right" >
           <a href="pure_flow_simulations.html" title="Running a pure fluid flow"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../advanced_cases.html" accesskey="U">Advanced use-cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Repulsive forces</a></li> 
       </ul>
@@ -44,11 +45,11 @@
           <div class="body" role="main">
             
   <section id="repulsive-forces">
-<h1>Repulsive forces<a class="headerlink" href="#repulsive-forces" title="Permalink to this headline">¶</a></h1>
+<h1>Repulsive forces<a class="headerlink" href="#repulsive-forces" title="Permalink to this heading">¶</a></h1>
 <p>Repulsive forces between cells and walls can be enabled through the following
 functions:</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">hemocell</span><span class="o">::</span><span class="n">setRepulsion</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">repulsionConstant</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">repulsionCutoff</span><span class="p">);</span><span class="w"></span>
-<span class="n">hemocell</span><span class="o">::</span><span class="n">enableBoundaryParticles</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">boundaryRepulsionConstant</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">boundaryRepulsionCutoff</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">hemocell</span><span class="o">::</span><span class="n">setRepulsion</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">repulsionConstant</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">repulsionCutoff</span><span class="p">);</span>
+<span class="n">hemocell</span><span class="o">::</span><span class="n">enableBoundaryParticles</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">boundaryRepulsionConstant</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">boundaryRepulsionCutoff</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Details on their implementations can be found in <code class="docutils literal notranslate"><span class="pre">hemocell/core/hemocell.cpp</span></code>
@@ -113,7 +114,7 @@ advanced force potential implementations.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -130,14 +131,14 @@ advanced force potential implementations.</p>
         <li class="right" >
           <a href="pure_flow_simulations.html" title="Running a pure fluid flow"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../advanced_cases.html" >Advanced use-cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Repulsive forces</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>

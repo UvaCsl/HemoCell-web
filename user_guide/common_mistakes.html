@@ -6,13 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Common mistakes &#8212; HemoCell 2.6 documentation</title>
+    <title>Common mistakes &#8212; HemoCell 2.7 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -32,7 +33,7 @@
         <li class="right" >
           <a href="utilities.html" title="Utility tools"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Common mistakes</a></li> 
       </ul>
     </div>  
@@ -43,9 +44,9 @@
           <div class="body" role="main">
             
   <section id="common-mistakes">
-<h1>Common mistakes<a class="headerlink" href="#common-mistakes" title="Permalink to this headline">¶</a></h1>
+<h1>Common mistakes<a class="headerlink" href="#common-mistakes" title="Permalink to this heading">¶</a></h1>
 <section id="numerical-instabilities">
-<h2>Numerical instabilities<a class="headerlink" href="#numerical-instabilities" title="Permalink to this headline">¶</a></h2>
+<h2>Numerical instabilities<a class="headerlink" href="#numerical-instabilities" title="Permalink to this heading">¶</a></h2>
 <p>Sometimes the simulation outcome might show strange behaviour or unexpected
 results. Often these are caused by numerical instabilities occurring somewhere
 in the simulation domain. Typical sign of such instabilities are:</p>
@@ -61,7 +62,7 @@ investigate the lattice Boltzmann parameters used during the simulation.
 Typically you should consider <code class="docutils literal notranslate"><span class="pre">u_lbm</span> <span class="pre">&lt;</span> <span class="pre">0.1</span></code> and <code class="docutils literal notranslate"><span class="pre">tau</span> <span class="pre">&gt;</span> <span class="pre">0.5</span></code>.</p>
 </section>
 <section id="cell-deletions">
-<h2>Cell deletions<a class="headerlink" href="#cell-deletions" title="Permalink to this headline">¶</a></h2>
+<h2>Cell deletions<a class="headerlink" href="#cell-deletions" title="Permalink to this heading">¶</a></h2>
 <p>If you observe unexpected cell removals, these might be caused due to
 instabilities (see above) as the cell might undergo extreme forces or flow
 velocities. When this happens, the cells are removed from the simulation in
@@ -123,7 +124,7 @@ once, i.e. inside the atomic block that contains the cell’s center
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -140,13 +141,13 @@ once, i.e. inside the atomic block that contains the cell’s center
         <li class="right" >
           <a href="utilities.html" title="Utility tools"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Common mistakes</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>

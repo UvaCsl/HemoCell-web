@@ -6,13 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>HemoCell Getting Started &#8212; HemoCell 2.6 documentation</title>
+    <title>HemoCell Getting Started &#8212; HemoCell 2.7 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -32,7 +33,7 @@
         <li class="right" >
           <a href="index.html" title="HemoCell"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">HemoCell Getting Started</a></li> 
       </ul>
     </div>  
@@ -43,9 +44,9 @@
           <div class="body" role="main">
             
   <section id="hemocell-getting-started">
-<h1>HemoCell Getting Started<a class="headerlink" href="#hemocell-getting-started" title="Permalink to this headline">¶</a></h1>
+<h1>HemoCell Getting Started<a class="headerlink" href="#hemocell-getting-started" title="Permalink to this heading">¶</a></h1>
 <section id="setting-up-hemocell-from-source">
-<span id="from-source"></span><h2>Setting up HemoCell from source<a class="headerlink" href="#setting-up-hemocell-from-source" title="Permalink to this headline">¶</a></h2>
+<span id="from-source"></span><h2>Setting up HemoCell from source<a class="headerlink" href="#setting-up-hemocell-from-source" title="Permalink to this heading">¶</a></h2>
 <p>Requirements for compiling and/or running HemoCell from source:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -132,7 +133,7 @@ with:</p>
 </div>
 </section>
 <section id="compiling-hemocell-from-source">
-<span id="compilation"></span><h2>Compiling HemoCell from source<a class="headerlink" href="#compiling-hemocell-from-source" title="Permalink to this headline">¶</a></h2>
+<span id="compilation"></span><h2>Compiling HemoCell from source<a class="headerlink" href="#compiling-hemocell-from-source" title="Permalink to this heading">¶</a></h2>
 <p>HemoCell can be compiled from source using <code class="docutils literal notranslate"><span class="pre">CMake</span></code>. In the root directory
 <code class="docutils literal notranslate"><span class="pre">./hemocell/</span></code>, execute the following instructions to configure and compile
 the HemoCell library:</p>
@@ -176,7 +177,7 @@ tests:</p>
 </div>
 </section>
 <section id="generating-initial-positions-for-cells">
-<span id="packcells"></span><h2>Generating initial positions for cells<a class="headerlink" href="#generating-initial-positions-for-cells" title="Permalink to this headline">¶</a></h2>
+<span id="packcells"></span><h2>Generating initial positions for cells<a class="headerlink" href="#generating-initial-positions-for-cells" title="Permalink to this heading">¶</a></h2>
 <p>At some point you might want to run a slightly different geometry, or run your
 simulation with a different concentration of cells. For this we offer the
 <code class="docutils literal notranslate"><span class="pre">packCells</span></code> tool which can be found in the <code class="docutils literal notranslate"><span class="pre">./hemocell/packCells</span></code> directory.</p>
@@ -194,7 +195,7 @@ to see how it works.</p>
 them.</p>
 </section>
 <section id="running-a-hemocell-case">
-<h2>Running a HemoCell case<a class="headerlink" href="#running-a-hemocell-case" title="Permalink to this headline">¶</a></h2>
+<h2>Running a HemoCell case<a class="headerlink" href="#running-a-hemocell-case" title="Permalink to this heading">¶</a></h2>
 <p>A HemoCell case should be run within the folder containing the <code class="docutils literal notranslate"><span class="pre">.xml</span></code> and
 <code class="docutils literal notranslate"><span class="pre">.pos</span></code> files. You can specify the number of desired processors with
 <code class="docutils literal notranslate"><span class="pre">mpirun</span></code>. The only argument for the case should be the <code class="docutils literal notranslate"><span class="pre">config.xml</span></code> file.
@@ -205,7 +206,7 @@ A typical command looks like this:</p>
 </div>
 </section>
 <section id="case-output-folder">
-<h2>Case output folder<a class="headerlink" href="#case-output-folder" title="Permalink to this headline">¶</a></h2>
+<h2>Case output folder<a class="headerlink" href="#case-output-folder" title="Permalink to this heading">¶</a></h2>
 <p>The output of a case is usually written to the <code class="docutils literal notranslate"><span class="pre">&lt;case&gt;/tmp</span></code> folder. The
 checkpoints are the <code class="docutils literal notranslate"><span class="pre">.xml</span></code> and <code class="docutils literal notranslate"><span class="pre">.dat</span></code> files. When a new checkpoint is
 created they are moved to <code class="docutils literal notranslate"><span class="pre">.xml.old</span> <span class="pre">and</span> <span class="pre">``.dat.old</span></code>. The hdf5 output is stored
@@ -213,7 +214,7 @@ per timestep in <code class="docutils literal notranslate"><span class="pre">tmp
 <a class="reference internal" href="#read-output"><span class="std std-ref">Parsing the output of a HemoCell case</span></a> and <a class="reference internal" href="helper_scripts.html#bpp"><span class="std std-ref">hemocell/scripts/batchPostProcess.sh</span></a> for more info.</p>
 </section>
 <section id="parsing-the-output-of-a-hemocell-case">
-<span id="read-output"></span><h2>Parsing the output of a HemoCell case<a class="headerlink" href="#parsing-the-output-of-a-hemocell-case" title="Permalink to this headline">¶</a></h2>
+<span id="read-output"></span><h2>Parsing the output of a HemoCell case<a class="headerlink" href="#parsing-the-output-of-a-hemocell-case" title="Permalink to this heading">¶</a></h2>
 <p>A HemoCell case produces multiple types of output. The simplest is the <code class="docutils literal notranslate"><span class="pre">csv</span></code>
 output which consists of all the information about cells in csv files. To merge
 the csv files into a single one per time-step you can use the script <a class="reference internal" href="helper_scripts.html#ccsv"><span class="std std-ref">hemocell/scripts/CellInfoMergeCSV.sh</span></a>
@@ -227,7 +228,7 @@ please select the <em>Legacy</em> XDMF file format when loading them in. The Hem
 <code class="docutils literal notranslate"><span class="pre">.xmf</span></code> files are not yet XDMF3 compatible.</p>
 </section>
 <section id="resuming-from-a-checkpoint">
-<h2>Resuming from a checkpoint<a class="headerlink" href="#resuming-from-a-checkpoint" title="Permalink to this headline">¶</a></h2>
+<h2>Resuming from a checkpoint<a class="headerlink" href="#resuming-from-a-checkpoint" title="Permalink to this heading">¶</a></h2>
 <p>To resume from a checkpoint you should run the executable from the directory you
 ran it originally from (so the directory with the <code class="docutils literal notranslate"><span class="pre">.xml</span></code> and <code class="docutils literal notranslate"><span class="pre">.pos</span></code> files
 visible. The first argument should be <code class="docutils literal notranslate"><span class="pre">tmp{_x}/checkpoint/checkpoint.xml</span></code> instead of
@@ -293,7 +294,7 @@ to be the same as the number of processors used for the initial run.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -310,13 +311,13 @@ to be the same as the number of processors used for the initial run.</p>
         <li class="right" >
           <a href="index.html" title="HemoCell"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HemoCell 2.7 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">HemoCell Getting Started</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>
