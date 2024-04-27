@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Pipe flow with periodic inflow &#8212; HemoCell 2.7 documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <title>Pipe flow with periodic inflow &#8212; HemoCell 2.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=4348de45"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -33,7 +30,7 @@
         <li class="right" >
           <a href="pipeflow.html" title="Pipe flow"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.8 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" accesskey="U">Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Pipe flow with periodic inflow</a></li> 
       </ul>
@@ -45,7 +42,7 @@
           <div class="body" role="main">
             
   <section id="pipe-flow-with-periodic-inflow">
-<h1>Pipe flow with periodic inflow<a class="headerlink" href="#pipe-flow-with-periodic-inflow" title="Permalink to this heading">¶</a></h1>
+<h1>Pipe flow with periodic inflow<a class="headerlink" href="#pipe-flow-with-periodic-inflow" title="Link to this heading">¶</a></h1>
 <p>The example in <code class="docutils literal notranslate"><span class="pre">examples/pipeflow_with_preinlet</span></code> provides an extension of the
 <a class="reference internal" href="pipeflow.html#pipe-flow"><span class="std std-ref">pipe flow</span></a> example with the advanced
 <code class="docutils literal notranslate"><span class="pre">pre-inlet</span></code> boundary condition as discussed in the next section.</p>
@@ -58,7 +55,7 @@
 </pre></div>
 </div>
 <section id="pre-inlet-boundary-condition">
-<h2>Pre-inlet boundary condition<a class="headerlink" href="#pre-inlet-boundary-condition" title="Permalink to this heading">¶</a></h2>
+<h2>Pre-inlet boundary condition<a class="headerlink" href="#pre-inlet-boundary-condition" title="Link to this heading">¶</a></h2>
 <p>The pre-inlet is one of the advanced boundary conditions in HemoCell and
 it provides a mean to generate a periodic influx of particles into the main
 simulation domain. This is of specific interest when normal periodicity on the
@@ -87,7 +84,7 @@ in this case red blood cells, are initialised in the pre-inlet domain.</p>
 <p><span class="caption-text">A two-dimensional projection of the total domain consisting of the periodic pre-inlet
 (blue, left) and the non-periodic main simulation domain (orange, right). The pre-inlet
 domain is seeded with a number of red blood cells at the start of the
-simulation.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+simulation.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>As the simulation progresses, the RBCs in the pre-inlet approach the main
@@ -104,7 +101,7 @@ simulation domain with a periodic influx of red blood cells. As these cells
 cross the boundary between both domains a <em>copy</em> is transferred to the main
 simulation domain and the cells is repeated at the pre-inlet’s inlet. Notice
 how the cells crossing this border go from blue to orange. Additionally, you
-can see the cells <em>at</em> this boundary repeated at the pre-inlet’s inlet.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+can see the cells <em>at</em> this boundary repeated at the pre-inlet’s inlet.</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>After numerous iterations the pre-inlet will achieve a quasi-steady-state,
@@ -120,7 +117,7 @@ packed more densely at the start (see <a class="reference internal" href="../Qui
 <img alt="Pipeflow" src="../_images/preinlet-30.png" />
 <figcaption>
 <p><span class="caption-text">After more iterations the pre-inlet keeps seeding the main simulation domain
-with new particles, all originating from a single initial positioning.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+with new particles, all originating from a single initial positioning.</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Conceptually, the pre-inlet works as follows: the pre-inlet is attached to an
@@ -147,7 +144,7 @@ of the pre-inlet.</p>
 </div>
 </section>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h2>
 <p>For basic configuration of the pipe flow, this example follows the same
 configuration settings as the original <a class="reference internal" href="pipeflow.html#pipe-flow"><span class="std std-ref">pipe flow</span></a> example, as discussed <a class="reference internal" href="pipeflow.html#configuration"><span class="std std-ref">here</span></a>.
 However, there are some pre-inlet specific parameters that can be modified:</p>
@@ -229,14 +226,14 @@ require to shift the original placements of the cells accordingly.</p>
         <li class="right" >
           <a href="pipeflow.html" title="Pipe flow"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.8 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" >Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Pipe flow with periodic inflow</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    &#169; Copyright 2024, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

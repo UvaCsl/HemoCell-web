@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>HemoCell &#8212; HemoCell 2.7 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    <title>HemoCell &#8212; HemoCell 2.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=514cf933" />
     
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
+    <script src="_static/documentation_options.js?v=4348de45"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -29,7 +26,7 @@
         <li class="right" >
           <a href="QuickStart.html" title="HemoCell Getting Started"
              accesskey="N">next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="#">HemoCell 2.8 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">HemoCell</a></li> 
       </ul>
     </div>  
@@ -40,7 +37,7 @@
           <div class="body" role="main">
             
   <section id="hemocell">
-<h1>HemoCell<a class="headerlink" href="#hemocell" title="Permalink to this heading">¶</a></h1>
+<h1>HemoCell<a class="headerlink" href="#hemocell" title="Link to this heading">¶</a></h1>
 <p>HemoCell is a parallel computing framework for simulation of dense deformable
 capsule suspensions, with special emphasis on blood flows and blood related
 vesicles (cells). The library implements validated mechanical models for
@@ -99,7 +96,7 @@ presented in <a class="reference internal" href="cases/pipeflow.html#pipe-flow">
 <span id="id6">[<a class="reference internal" href="#id8" title="Gábor Závodszky, Britt van Rooij, Victor Azizi, and Alfons Hoekstra. Cellular level in-silico modeling of blood rheology with an improved material model for red blood cells. Frontiers in Physiology, 8:563, 2017. URL: https://www.frontiersin.org/article/10.3389/fphys.2017.00563, doi:10.3389/fphys.2017.00563.">1</a>]</span>.</p>
 </section>
 <section id="user-guide">
-<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this heading">¶</a></h1>
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="QuickStart.html">HemoCell Getting Started</a><ul>
@@ -108,7 +105,7 @@ presented in <a class="reference internal" href="cases/pipeflow.html#pipe-flow">
 <li class="toctree-l2"><a class="reference internal" href="QuickStart.html#generating-initial-positions-for-cells">Generating initial positions for cells</a></li>
 <li class="toctree-l2"><a class="reference internal" href="QuickStart.html#running-a-hemocell-case">Running a HemoCell case</a></li>
 <li class="toctree-l2"><a class="reference internal" href="QuickStart.html#case-output-folder">Case output folder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="QuickStart.html#parsing-the-output-of-a-hemocell-case">Parsing the output of a HemoCell case</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QuickStart.html#post-processing-the-output-of-a-hemocell-case">Post-processing the output of a HemoCell case</a></li>
 <li class="toctree-l2"><a class="reference internal" href="QuickStart.html#resuming-from-a-checkpoint">Resuming from a checkpoint</a></li>
 </ul>
 </li>
@@ -140,7 +137,7 @@ presented in <a class="reference internal" href="cases/pipeflow.html#pipe-flow">
 <li class="toctree-l1"><a class="reference internal" href="helper_scripts.html">Helper scripts</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="helper_scripts.html#hemocell-patch-patchplb-sh">hemocell/patch/patchPLB.sh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helper_scripts.html#hemocell-scripts-batchpostprocess-sh">hemocell/scripts/batchPostProcess.sh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="helper_scripts.html#hemocell-scripts-cartesius-intel-env-sh">hemocell/scripts/cartesius[_intel]_env.sh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helper_scripts.html#hemocell-scripts-system-env-sh">hemocell/scripts/[_system_]_env.sh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helper_scripts.html#hemocell-scripts-cellinfomergecsv-sh">hemocell/scripts/CellInfoMergeCSV.sh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helper_scripts.html#convert-xmf-to-x3d-py">convert_xmf_to_x3d.py</a></li>
 </ul>
@@ -150,6 +147,7 @@ presented in <a class="reference internal" href="cases/pipeflow.html#pipe-flow">
 <li class="toctree-l2"><a class="reference internal" href="advanced_cases/pure_flow_simulations.html">Running a pure fluid flow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced_cases/repulsion.html">Repulsive forces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="advanced_cases/saving_csv_output_only.html">Saving only the CSV output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_cases/profiler.html">Profiling Hemocell performance</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="visualization.html">Visualization and post-processing</a><ul>
@@ -186,14 +184,9 @@ presented in <a class="reference internal" href="cases/pipeflow.html#pipe-flow">
 </div>
 </section>
 <section id="acknowledgments">
-<h1>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this heading">¶</a></h1>
+<h1>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Link to this heading">¶</a></h1>
 <p>HemoCell is developed and maintained by several researchers. The list of developpers and mainteainers at the last document update:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Gábor Závodszky</p></td>
 <td><p>Developer and Co-PI</p></td>
@@ -279,7 +272,7 @@ presented in <a class="reference internal" href="cases/pipeflow.html#pipe-flow">
 </table>
 <p>If you have any question please open a <a class="reference external" href="https://github.com/UvaCsl/HemoCell/discussions">Github discussion</a>.</p>
 <section id="citing-hemocell">
-<h2>Citing HemoCell<a class="headerlink" href="#citing-hemocell" title="Permalink to this heading">¶</a></h2>
+<h2>Citing HemoCell<a class="headerlink" href="#citing-hemocell" title="Link to this heading">¶</a></h2>
 <p><em>When using HemoCell please cite the HemoCell paper:</em></p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>@article{Zavodszky:2017,
   author={Závodszky, Gábor and van Rooij, Britt and Azizi, Victor and Hoekstra, Alfons},
@@ -297,61 +290,77 @@ presented in <a class="reference internal" href="cases/pipeflow.html#pipe-flow">
 </section>
 </section>
 <section id="hemocell-related-publications">
-<h1>HemoCell related publications<a class="headerlink" href="#hemocell-related-publications" title="Permalink to this heading">¶</a></h1>
+<h1>HemoCell related publications<a class="headerlink" href="#hemocell-related-publications" title="Link to this heading">¶</a></h1>
 <div class="docutils container" id="id7">
-<dl class="citation">
-<dt class="label" id="id8"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id6">2</a>)</span></dt>
-<dd><p>Gábor Závodszky, Britt van Rooij, Victor Azizi, and Alfons Hoekstra. Cellular level in-silico modeling of blood rheology with an improved material model for red blood cells. <em>Frontiers in Physiology</em>, 8:563, 2017. URL: <a class="reference external" href="https://www.frontiersin.org/article/10.3389/fphys.2017.00563">https://www.frontiersin.org/article/10.3389/fphys.2017.00563</a>, <a class="reference external" href="https://doi.org/10.3389/fphys.2017.00563">doi:10.3389/fphys.2017.00563</a>.</p>
-</dd>
-<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>Gábor Závodszky, Britt van Rooij, Ben Czaja, Victor Azizi, David de Kanter, and Alfons G Hoekstra. Red blood cell and platelet diffusivity and margination in the presence of cross-stream gradients in blood flows. <em>Physics of Fluids</em>, 31(3):031903, 2019.</p>
-</dd>
-<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
-<dd><p>B Czaja, G Závodszky, V Azizi Tarksalooyeh, and AG Hoekstra. Cell-resolved blood flow simulations of saccular aneurysms: effects of pulsatility and aspect ratio. <em>Journal of The Royal Society Interface</em>, 15(146):20180485, 2018.</p>
-</dd>
-<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id2">4</a></span></dt>
-<dd><p>BJM Van Rooij, G Závodszky, AG Hoekstra, and DN Ku. Haemodynamic flow conditions at the initiation of high-shear platelet aggregation: a combined in vitro and cellular in silico study. <em>Interface Focus</em>, 11(1):20190126, 2021.</p>
-</dd>
-<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id3">5</a></span></dt>
-<dd><p>Victor Azizi Tarksalooyeh, Gábor Závodszky, and Alfons G Hoekstra. Optimizing parallel performance of the cell based blood flow simulation software hemocell. In <em>International Conference on Computational Science</em>, 537–547. Springer, 2019.</p>
-</dd>
-<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id3">6</a></span></dt>
-<dd><p>S. Alowayyed, G. Závodszky, V. Azizi, and A.G. Hoekstra. Load balancing of parallel cell-based blood flow simulations. <em>Journal of Computational Science</em>, 24:1 – 7, 2018. URL: <a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1877750317302788">http://www.sciencedirect.com/science/article/pii/S1877750317302788</a>, <a class="reference external" href="https://doi.org/https://doi.org/10.1016/j.jocs.2017.11.008">doi:https://doi.org/10.1016/j.jocs.2017.11.008</a>.</p>
-</dd>
-<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id4">7</a></span></dt>
-<dd><p>Benjamin Czaja, Mario Gutierrez, Gábor Závodszky, David de Kanter, Alfons Hoekstra, and Omolola Eniola-Adefeso. The influence of red blood cell deformability on hematocrit profiles and platelet margination. <em>PLOS Computational Biology</em>, 16(3):e1007716, 2020.</p>
-</dd>
-<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id4">8</a></span></dt>
-<dd><p>Mike Haan, Gábor Závodszky, Victor Azizi, and Alfons Hoekstra. Numerical investigation of the effects of red blood cell cytoplasmic viscosity contrasts on single cell and bulk transport behaviour. <em>Applied Sciences</em>, 8:1616, 09 2018. <a class="reference external" href="https://doi.org/10.3390/app8091616">doi:10.3390/app8091616</a>.</p>
-</dd>
-<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id5">9</a></span></dt>
-<dd><p>BJM van Rooij, Gábor Závodszky, VW Azizi Tarksalooyeh, and Alfons Georgius Hoekstra. Identifying the start of a platelet aggregate by the shear rate and the cell-depleted layer. <em>Journal of the Royal Society Interface</em>, 16(159):20190148, 2019.</p>
-</dd>
-<dt class="label" id="id9"><span class="brackets">10</span></dt>
-<dd><p>Christian J Spieker, Konstantinos Asteriou, and Gab́or Zav́odszky. Simulating initial steps of platelet aggregate formation in a cellular blood flow environment. In <em>International Conference on Computational Science</em>, 323–336. Springer, 2023.</p>
-</dd>
-<dt class="label" id="id10"><span class="brackets">11</span></dt>
-<dd><p>Benjamin Czaja, Jonathan de Bouter, Morgan Heisler, Gábor Závodszky, Sonja Karst, Marinko Sarunic, David Maberley, and Alfons Hoekstra. The effect of stiffened diabetic red blood cells on wall shear stress in a reconstructed 3d microaneurysm. <em>Computer Methods in Biomechanics and Biomedical Engineering</em>, 25(15):1691–1709, 2022.</p>
-</dd>
-<dt class="label" id="id11"><span class="brackets">12</span></dt>
-<dd><p>Jelle van Dijk, Gabor Zavodszky, Ana-Lucia Varbanescu, Andy D Pimentel, and Alfons Hoekstra. Building a fine-grained analytical performance model for complex scientific simulations. In <em>International Conference on Parallel Processing and Applied Mathematics</em>, 183–196. Springer, 2022.</p>
-</dd>
-<dt class="label" id="id12"><span class="brackets">13</span></dt>
-<dd><p>Christian J Spieker, Gábor Závodszky, Clarisse Mouriaux, Max Van der Kolk, Christian Gachet, Pierre H Mangin, and Alfons G Hoekstra. The effects of micro-vessel curvature induced elongational flows on platelet adhesion. <em>Annals of Biomedical Engineering</em>, 49:3609–3620, 2021.</p>
-</dd>
-<dt class="label" id="id14"><span class="brackets">14</span></dt>
-<dd><p>Benjamin Czaja, Gábor Závodszky, and Alfons Hoekstra. A heterogeneous multi-scale model for blood flow. In <em>International Conference on Computational Science</em>, 403–409. Springer, 2020.</p>
-</dd>
-<dt class="label" id="id15"><span class="brackets">15</span></dt>
-<dd><p>Kevin de Vries, Anna Nikishova, Benjamin Czaja, Gábor Závodszky, and Alfons G Hoekstra. Inverse uncertainty quantification of a cell model using a gaussian process metamodel. <em>International Journal for Uncertainty Quantification</em>, 2020.</p>
-</dd>
-</dl>
+<div role="list" class="citation-list">
+<div class="citation" id="id8" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id6">2</a>)</span>
+<p>Gábor Závodszky, Britt van Rooij, Victor Azizi, and Alfons Hoekstra. Cellular level in-silico modeling of blood rheology with an improved material model for red blood cells. <em>Frontiers in Physiology</em>, 8:563, 2017. URL: <a class="reference external" href="https://www.frontiersin.org/article/10.3389/fphys.2017.00563">https://www.frontiersin.org/article/10.3389/fphys.2017.00563</a>, <a class="reference external" href="https://doi.org/10.3389/fphys.2017.00563">doi:10.3389/fphys.2017.00563</a>.</p>
+</div>
+<div class="citation" id="id18" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Gábor Závodszky, Britt van Rooij, Ben Czaja, Victor Azizi, David de Kanter, and Alfons G Hoekstra. Red blood cell and platelet diffusivity and margination in the presence of cross-stream gradients in blood flows. <em>Physics of Fluids</em>, 31(3):031903, 2019.</p>
+</div>
+<div class="citation" id="id20" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">3</a><span class="fn-bracket">]</span></span>
+<p>B Czaja, G Závodszky, V Azizi Tarksalooyeh, and AG Hoekstra. Cell-resolved blood flow simulations of saccular aneurysms: effects of pulsatility and aspect ratio. <em>Journal of The Royal Society Interface</em>, 15(146):20180485, 2018.</p>
+</div>
+<div class="citation" id="id13" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">4</a><span class="fn-bracket">]</span></span>
+<p>BJM Van Rooij, G Závodszky, AG Hoekstra, and DN Ku. Haemodynamic flow conditions at the initiation of high-shear platelet aggregation: a combined in vitro and cellular in silico study. <em>Interface Focus</em>, 11(1):20190126, 2021.</p>
+</div>
+<div class="citation" id="id19" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">5</a><span class="fn-bracket">]</span></span>
+<p>Victor Azizi Tarksalooyeh, Gábor Závodszky, and Alfons G Hoekstra. Optimizing parallel performance of the cell based blood flow simulation software hemocell. In <em>International Conference on Computational Science</em>, 537–547. Springer, 2019.</p>
+</div>
+<div class="citation" id="id22" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">6</a><span class="fn-bracket">]</span></span>
+<p>S. Alowayyed, G. Závodszky, V. Azizi, and A.G. Hoekstra. Load balancing of parallel cell-based blood flow simulations. <em>Journal of Computational Science</em>, 24:1 – 7, 2018. URL: <a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1877750317302788">http://www.sciencedirect.com/science/article/pii/S1877750317302788</a>, <a class="reference external" href="https://doi.org/https://doi.org/10.1016/j.jocs.2017.11.008">doi:https://doi.org/10.1016/j.jocs.2017.11.008</a>.</p>
+</div>
+<div class="citation" id="id16" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">7</a><span class="fn-bracket">]</span></span>
+<p>Benjamin Czaja, Mario Gutierrez, Gábor Závodszky, David de Kanter, Alfons Hoekstra, and Omolola Eniola-Adefeso. The influence of red blood cell deformability on hematocrit profiles and platelet margination. <em>PLOS Computational Biology</em>, 16(3):e1007716, 2020.</p>
+</div>
+<div class="citation" id="id21" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">8</a><span class="fn-bracket">]</span></span>
+<p>Mike Haan, Gábor Závodszky, Victor Azizi, and Alfons Hoekstra. Numerical investigation of the effects of red blood cell cytoplasmic viscosity contrasts on single cell and bulk transport behaviour. <em>Applied Sciences</em>, 8:1616, 09 2018. <a class="reference external" href="https://doi.org/10.3390/app8091616">doi:10.3390/app8091616</a>.</p>
+</div>
+<div class="citation" id="id17" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">9</a><span class="fn-bracket">]</span></span>
+<p>BJM van Rooij, Gábor Závodszky, VW Azizi Tarksalooyeh, and Alfons Georgius Hoekstra. Identifying the start of a platelet aggregate by the shear rate and the cell-depleted layer. <em>Journal of the Royal Society Interface</em>, 16(159):20190148, 2019.</p>
+</div>
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>10<span class="fn-bracket">]</span></span>
+<p>Christian J Spieker, Konstantinos Asteriou, and Gab́or Zav́odszky. Simulating initial steps of platelet aggregate formation in a cellular blood flow environment. In <em>International Conference on Computational Science</em>, 323–336. Springer, 2023.</p>
+</div>
+<div class="citation" id="id10" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></span>
+<p>Benjamin Czaja, Jonathan de Bouter, Morgan Heisler, Gábor Závodszky, Sonja Karst, Marinko Sarunic, David Maberley, and Alfons Hoekstra. The effect of stiffened diabetic red blood cells on wall shear stress in a reconstructed 3d microaneurysm. <em>Computer Methods in Biomechanics and Biomedical Engineering</em>, 25(15):1691–1709, 2022.</p>
+</div>
+<div class="citation" id="id11" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>12<span class="fn-bracket">]</span></span>
+<p>Jelle van Dijk, Gabor Zavodszky, Ana-Lucia Varbanescu, Andy D Pimentel, and Alfons Hoekstra. Building a fine-grained analytical performance model for complex scientific simulations. In <em>International Conference on Parallel Processing and Applied Mathematics</em>, 183–196. Springer, 2022.</p>
+</div>
+<div class="citation" id="id12" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>13<span class="fn-bracket">]</span></span>
+<p>Christian J Spieker, Gábor Závodszky, Clarisse Mouriaux, Max Van der Kolk, Christian Gachet, Pierre H Mangin, and Alfons G Hoekstra. The effects of micro-vessel curvature induced elongational flows on platelet adhesion. <em>Annals of Biomedical Engineering</em>, 49:3609–3620, 2021.</p>
+</div>
+<div class="citation" id="id14" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>14<span class="fn-bracket">]</span></span>
+<p>Benjamin Czaja, Gábor Závodszky, and Alfons Hoekstra. A heterogeneous multi-scale model for blood flow. In <em>International Conference on Computational Science</em>, 403–409. Springer, 2020.</p>
+</div>
+<div class="citation" id="id15" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>15<span class="fn-bracket">]</span></span>
+<p>Kevin de Vries, Anna Nikishova, Benjamin Czaja, Gábor Závodszky, and Alfons G Hoekstra. Inverse uncertainty quantification of a cell model using a gaussian process metamodel. <em>International Journal for Uncertainty Quantification</em>, 2020.</p>
+</div>
+</div>
 </div>
 </section>
 <section id="contributions">
-<h1>Contributions<a class="headerlink" href="#contributions" title="Permalink to this heading">¶</a></h1>
+<h1>Contributions<a class="headerlink" href="#contributions" title="Link to this heading">¶</a></h1>
 <section id="before-you-contribute">
-<h2>Before you contribute<a class="headerlink" href="#before-you-contribute" title="Permalink to this heading">¶</a></h2>
+<h2>Before you contribute<a class="headerlink" href="#before-you-contribute" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Please make sure that your contribution falls under HemoCell license.</p></li>
 <li><p>If you want to resolve a bug : make sure that it still exists.
@@ -363,7 +372,7 @@ feel free to open a <a class="reference external" href="https://github.com/UvaCs
 </ul>
 </section>
 <section id="code-contribution">
-<h2>Code contribution<a class="headerlink" href="#code-contribution" title="Permalink to this heading">¶</a></h2>
+<h2>Code contribution<a class="headerlink" href="#code-contribution" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Create a fork of HemoCell repository.</p></li>
 <li><p>Create a new branch from the develop branch for the issue you want to work on.
@@ -440,13 +449,13 @@ Please give a name to your branch that is relevant to the issue.</p></li>
         <li class="right" >
           <a href="QuickStart.html" title="HemoCell Getting Started"
              >next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="#">HemoCell 2.8 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">HemoCell</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    &#169; Copyright 2024, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

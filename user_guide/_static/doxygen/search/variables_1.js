@@ -14,6 +14,6 @@ var searchData=
   ['atomicblockid_11',['atomicBlockId',['../classhemo_1_1HemoCellParticleField.html#a775bafd90287d32cd66fe523a024d8e0',1,'hemo::HemoCellParticleField']]],
   ['atomiclattice_12',['atomicLattice',['../classhemo_1_1HemoCellParticleField.html#abc30592cbf795b5a6f06e00adfe4c434',1,'hemo::HemoCellParticleField']]],
   ['average_5fvel_13',['average_vel',['../classhemo_1_1PreInlet.html#a643d963c47aaddc101a4590d32e138e3',1,'hemo::PreInlet']]],
-  ['avg_14',['avg',['../structhemo_1_1ParticleStatistics.html#a660612f31efdbfb0e089dfd0f3f0848e',1,'hemo::ParticleStatistics::avg'],['../structhemo_1_1FluidStatistics.html#a1f151b75dc53a84d2dfc5fdeba6f4efe',1,'hemo::FluidStatistics::avg']]],
+  ['avg_14',['avg',['../structhemo_1_1FluidStatistics.html#a1f151b75dc53a84d2dfc5fdeba6f4efe',1,'hemo::FluidStatistics::avg'],['../structhemo_1_1ParticleStatistics.html#a660612f31efdbfb0e089dfd0f3f0848e',1,'hemo::ParticleStatistics::avg']]],
   ['axial_15',['axial',['../classForcedDiameter.html#a5be7aa76a244c36175dbea31d34d8e59',1,'ForcedDiameter']]]
 ];

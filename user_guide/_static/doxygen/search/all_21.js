@@ -7,7 +7,7 @@ var searchData=
   ['wbchighordermodel_2eh_4',['wbcHighOrderModel.h',['../wbcHighOrderModel_8h.html',1,'']]],
   ['weak_20scaling_20analysis_5',['weak scaling analysis',['../md_examples_2cube_2preprocess_2README.html#autotoc_md23',1,'Post-processing weak-scaling analysis'],['../md_examples_2cube_2preprocess_2README.html#autotoc_md22',1,'Weak-scaling analysis']]],
   ['weak_20scaling_20test_20of_20hemocell_6',['Input file generation for weak-scaling test of HemoCell',['../md_examples_2cube_2preprocess_2README.html',1,'']]],
-  ['weakscaling_7',['weakscaling',['../classanalysis_1_1WeakScaling.html',1,'analysis.WeakScaling'],['../namespaceweakscaling.html',1,'weakscaling'],['../namespacehemo.html#a74d4634c3cb577341289dd9ea80ae9c5',1,'hemo::weakScaling()']]],
+  ['weakscaling_7',['weakscaling',['../classanalysis_1_1WeakScaling.html',1,'analysis.WeakScaling'],['../namespacehemo.html#a74d4634c3cb577341289dd9ea80ae9c5',1,'hemo::weakScaling()'],['../namespaceweakscaling.html',1,'weakscaling']]],
   ['weakscaling_2epy_8',['weakscaling.py',['../weakscaling_8py.html',1,'']]],
   ['wedge_9',['wedge',['../capillary_8cpp.html#a198c01cbf13aa7ce7b025ff7b7aba07da721d5e522bcc0b0defce43b967d34091',1,'Wedge:&#160;capillary.cpp'],['../classWedge.html',1,'Wedge']]],
   ['wedge_20example_10',['Wedge example',['../md_examples_2capillary_2README.html#autotoc_md17',1,'']]],

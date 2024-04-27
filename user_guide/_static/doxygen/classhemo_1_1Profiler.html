@@ -88,6 +88,10 @@ $(function() {
 Collaboration diagram for hemo::Profiler:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhemo_1_1Profiler__coll__graph.png" border="0" usemap="#ahemo_1_1Profiler_coll__map" alt="Collaboration graph"/></div>
+<map name="ahemo_1_1Profiler_coll__map" id="ahemo_1_1Profiler_coll__map">
+<area shape="rect" title=" " alt="" coords="5,7,119,33"/>
+<area shape="poly" title=" " alt="" coords="133,14,145,20,119,27,118,22,140,20,132,19"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -106,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf8280e26321a0fb902c06fc1b52b1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e24cb3363d107482369198dc2c0b3d9" id="r_a1e24cb3363d107482369198dc2c0b3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhemo_1_1Profiler.html#a1e24cb3363d107482369198dc2c0b3d9">outputStatistics</a> ()</td></tr>
 <tr class="separator:a1e24cb3363d107482369198dc2c0b3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37df3e4156ce77cfc25fd6e3fe922678" id="r_a37df3e4156ce77cfc25fd6e3fe922678"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhemo_1_1Profiler.html#a37df3e4156ce77cfc25fd6e3fe922678">outputStatistics</a> (int)</td></tr>
+<tr class="separator:a37df3e4156ce77cfc25fd6e3fe922678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a9c454a2a4af5881baf255c720c8b1" id="r_aa2a9c454a2a4af5881baf255c720c8b1"><td class="memItemLeft" align="right" valign="top">std::chrono::high_resolution_clock::duration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhemo_1_1Profiler.html#aa2a9c454a2a4af5881baf255c720c8b1">elapsed</a> ()</td></tr>
 <tr class="separator:aa2a9c454a2a4af5881baf255c720c8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a573ddcb8e4fb3561d9d81a31f6a08" id="r_a16a573ddcb8e4fb3561d9d81a31f6a08"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhemo_1_1Profiler.html#a16a573ddcb8e4fb3561d9d81a31f6a08">elapsed_string</a> ()</td></tr>
@@ -127,6 +133,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a253ff8c643f1895888ecc405e3e8ad7f" id="r_a253ff8c643f1895888ecc405e3e8ad7f"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="constant__defaults_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &gt; </td></tr>
 <tr class="memitem:a253ff8c643f1895888ecc405e3e8ad7f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classhemo_1_1Profiler.html#a253ff8c643f1895888ecc405e3e8ad7f">printStatistics_inner</a> (int level, <a class="el" href="constant__defaults_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;out)</td></tr>
 <tr class="separator:a253ff8c643f1895888ecc405e3e8ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5781b1fb5ac5ccbd92120facd9b230ae" id="r_a5781b1fb5ac5ccbd92120facd9b230ae"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="constant__defaults_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &gt; </td></tr>
+<tr class="memitem:a5781b1fb5ac5ccbd92120facd9b230ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classhemo_1_1Profiler.html#a5781b1fb5ac5ccbd92120facd9b230ae">printStatistics_JSON</a> (<a class="el" href="constant__defaults_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;out)</td></tr>
+<tr class="separator:a5781b1fb5ac5ccbd92120facd9b230ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -267,7 +276,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a1e24cb3363d107482369198dc2c0b3d9" name="a1e24cb3363d107482369198dc2c0b3d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e24cb3363d107482369198dc2c0b3d9">&#9670;&#160;</a></span>outputStatistics()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e24cb3363d107482369198dc2c0b3d9">&#9670;&#160;</a></span>outputStatistics() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,6 +285,24 @@ Private Attributes</h2></td></tr>
           <td class="memname">void hemo::Profiler::outputStatistics </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37df3e4156ce77cfc25fd6e3fe922678" name="a37df3e4156ce77cfc25fd6e3fe922678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37df3e4156ce77cfc25fd6e3fe922678">&#9670;&#160;</a></span>outputStatistics() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hemo::Profiler::outputStatistics </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>batchsize</em> = <code>INT_MAX</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -327,6 +354,34 @@ template&lt;typename <a class="el" href="constant__defaults_8h.html#a634f2e2245a
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5781b1fb5ac5ccbd92120facd9b230ae" name="a5781b1fb5ac5ccbd92120facd9b230ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5781b1fb5ac5ccbd92120facd9b230ae">&#9670;&#160;</a></span>printStatistics_JSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="constant__defaults_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hemo::Profiler::printStatistics_JSON </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="constant__defaults_8h.html#a634f2e2245ac87de466e2810dee4f841">T</a> &amp;&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>

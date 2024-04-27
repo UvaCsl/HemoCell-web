@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>One stretching cell &#8212; HemoCell 2.7 documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <title>One stretching cell &#8212; HemoCell 2.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=4348de45"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -33,7 +30,7 @@
         <li class="right" >
           <a href="onecellshear.html" title="One shearing cell"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.8 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" accesskey="U">Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">One stretching cell</a></li> 
       </ul>
@@ -45,7 +42,7 @@
           <div class="body" role="main">
             
   <section id="one-stretching-cell">
-<h1>One stretching cell<a class="headerlink" href="#one-stretching-cell" title="Permalink to this heading">¶</a></h1>
+<h1>One stretching cell<a class="headerlink" href="#one-stretching-cell" title="Link to this heading">¶</a></h1>
 <p>The example in <code class="docutils literal notranslate"><span class="pre">examples/stretchCell</span></code> presents a validation example for the
 material models used in <code class="docutils literal notranslate"><span class="pre">HemoCell</span></code>. A single cell is initialised in a
 periodic domain, i.e. all external surfaces are subjected to periodic boundary
@@ -76,7 +73,7 @@ fields can be visualised separately by viewing the <code class="docutils literal
 <img alt="A cell subjected to stretching forces." src="../_images/one-stretched-cell.png" />
 <figcaption>
 <p><span class="caption-text">A deformed red blood cell after being subjected to opposing forces at either
-side of the RBC, where the arrows visualise the applied forcing.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+side of the RBC, where the arrows visualise the applied forcing.</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -87,7 +84,7 @@ These are collection in <cite>./stretch-$f.log</cite> and can be used for valida
 purposes.</p>
 </div>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h2>
 <p>There is one parameter that can be modified in this example, i.e. the
 applied stretching force in pico Newton:</p>
 <ul class="simple">
@@ -95,7 +92,7 @@ applied stretching force in pico Newton:</p>
 </ul>
 </section>
 <section id="validation">
-<h2>Validation<a class="headerlink" href="#validation" title="Permalink to this heading">¶</a></h2>
+<h2>Validation<a class="headerlink" href="#validation" title="Link to this heading">¶</a></h2>
 <p>The script <code class="docutils literal notranslate"><span class="pre">validation.sh</span></code> helps to perform basic validation of the cell
 stretch model as originally presented in <span id="id1">[<a class="reference internal" href="../index.html#id8" title="Gábor Závodszky, Britt van Rooij, Victor Azizi, and Alfons Hoekstra. Cellular level in-silico modeling of blood rheology with an improved material model for red blood cells. Frontiers in Physiology, 8:563, 2017. URL: https://www.frontiersin.org/article/10.3389/fphys.2017.00563, doi:10.3389/fphys.2017.00563.">1</a>]</span>. The script runs
 through various evaluations of <code class="docutils literal notranslate"><span class="pre">stretchCell</span></code> with different values for the
@@ -184,14 +181,14 @@ reference point when investigating cell stretch models.</p>
         <li class="right" >
           <a href="onecellshear.html" title="One shearing cell"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.8 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" >Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">One stretching cell</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    &#169; Copyright 2024, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

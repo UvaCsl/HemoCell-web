@@ -20,7 +20,7 @@ var searchData=
   ['number_5fof_5fcells_17',['number_of_cells',['../classhemo_1_1HemoCellFields.html#af7ce695d8d6552f0902989fbb0ee83e8',1,'hemo::HemoCellFields']]],
   ['numvertex_18',['numVertex',['../classhemo_1_1HemoCellField.html#abb9eb21a7b8149219afe82708620f5ca',1,'hemo::HemoCellField']]],
   ['nv_19',['Nv',['../classplb_1_1MeshMetrics.html#ae97c29871cff4524d5611a1641b9cb8d',1,'plb::MeshMetrics']]],
-  ['nx_20',['nx',['../classhemo_1_1LeesEdwardsBC.html#aa52ea30f39111ffcac42b1d816c9c96e',1,'hemo::LeesEdwardsBC::nx'],['../classhemo_1_1LeesEdwardsBCGetPopulations.html#a4ba870a02ae1f7b7fb599ac02fc195c7',1,'hemo::LeesEdwardsBCGetPopulations::nx']]],
+  ['nx_20',['nx',['../classhemo_1_1LeesEdwardsBCGetPopulations.html#a4ba870a02ae1f7b7fb599ac02fc195c7',1,'hemo::LeesEdwardsBCGetPopulations::nx'],['../classhemo_1_1LeesEdwardsBC.html#aa52ea30f39111ffcac42b1d816c9c96e',1,'hemo::LeesEdwardsBC::nx']]],
   ['ny_21',['ny',['../classhemo_1_1LeesEdwardsBC.html#a8562681f5fa419c01083c0dad67bb655',1,'hemo::LeesEdwardsBC']]],
   ['nz_22',['nz',['../classhemo_1_1LeesEdwardsBCGetPopulations.html#a3e3ba06f56d17d7b192a6a70a369d9b9',1,'hemo::LeesEdwardsBCGetPopulations::nz'],['../classhemo_1_1LeesEdwardsBCSetPopulations.html#a0d4c8bcf6bf122fb9f1fa9844efb0227',1,'hemo::LeesEdwardsBCSetPopulations::nz'],['../classhemo_1_1LeesEdwardsBC.html#adf210d608533a4c5eaf4bec5825b43ed',1,'hemo::LeesEdwardsBC::nz']]]
 ];

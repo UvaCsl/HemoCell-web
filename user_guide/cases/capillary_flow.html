@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Capillary flow &#8212; HemoCell 2.7 documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <title>Capillary flow &#8212; HemoCell 2.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=514cf933" />
     
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
+    <script src="../_static/documentation_options.js?v=4348de45"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -33,7 +30,7 @@
         <li class="right" >
           <a href="pipeflow_with_preinlet.html" title="Pipe flow with periodic inflow"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.8 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" accesskey="U">Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Capillary flow</a></li> 
       </ul>
@@ -45,7 +42,7 @@
           <div class="body" role="main">
             
   <section id="capillary-flow">
-<h1>Capillary flow<a class="headerlink" href="#capillary-flow" title="Permalink to this heading">¶</a></h1>
+<h1>Capillary flow<a class="headerlink" href="#capillary-flow" title="Link to this heading">¶</a></h1>
 <p>The example in <code class="docutils literal notranslate"><span class="pre">examples/capillary</span></code> presents two example cases where a single
 white blood cell (WBC) is flowing through a narrow capillary. The considered
 channels have smaller diameters compared to the WBC, requiring the cell to
@@ -74,7 +71,7 @@ the solid core can be specified through the <code class="docutils literal notran
 parameter in the <code class="docutils literal notranslate"><span class="pre">WBC_wedge.xml,</span> <span class="pre">WBC_bifurcation.xml</span></code> configuration files.</p>
 </div>
 <section id="squeezing-through-a-gap-scenario-wedge">
-<h2>Squeezing through a gap (<code class="docutils literal notranslate"><span class="pre">Scenario::Wedge</span></code>)<a class="headerlink" href="#squeezing-through-a-gap-scenario-wedge" title="Permalink to this heading">¶</a></h2>
+<h2>Squeezing through a gap (<code class="docutils literal notranslate"><span class="pre">Scenario::Wedge</span></code>)<a class="headerlink" href="#squeezing-through-a-gap-scenario-wedge" title="Link to this heading">¶</a></h2>
 <p>The first example (<code class="docutils literal notranslate"><span class="pre">Scenario::Wedge</span></code>) considers a single white blood cell
 (WBC) flowing through a narrow gap between two triangular wedges. Since the
 outer diameter of the WBC is larger than the considered gap in the solid
@@ -90,12 +87,12 @@ is shown in four different configurations as it passes through the gap.
 Sinigificant deformations are observed that relax again once the cell has
 fully passed the smallest diameter of the gap. The shown velocity magnitude
 (blue to red) corresponds to the second deformation, i.e. when the cell
-passes through the smallest diameter.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+passes through the smallest diameter.</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="a-bifurcating-capillary-scenario-bifurcation">
-<h2>A bifurcating capillary (<code class="docutils literal notranslate"><span class="pre">Scenario::Bifurcation</span></code>)<a class="headerlink" href="#a-bifurcating-capillary-scenario-bifurcation" title="Permalink to this heading">¶</a></h2>
+<h2>A bifurcating capillary (<code class="docutils literal notranslate"><span class="pre">Scenario::Bifurcation</span></code>)<a class="headerlink" href="#a-bifurcating-capillary-scenario-bifurcation" title="Link to this heading">¶</a></h2>
 <p>The second example (<code class="docutils literal notranslate"><span class="pre">Scenario::Bifurcation</span></code>) considers a single white blood cell
 (WBC) flowing through one of two capillaries. The domain starts with a single
 inlet that branches in two capillaries of equal length and cross-section.
@@ -108,12 +105,12 @@ than the diameter of the capillary, resulting in significant cell deformations.<
 past the bifurcation. The cell is show for four different configurations as
 it passes through the channel. Significat deformations are observed when the
 cell squeezed through the bottom capillary. The velocity magnitude is
-depicted (blue to red) for the second-last position of the WBC.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+depicted (blue to red) for the second-last position of the WBC.</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="adding-repulsive-forces">
-<h2>Adding repulsive forces<a class="headerlink" href="#adding-repulsive-forces" title="Permalink to this heading">¶</a></h2>
+<h2>Adding repulsive forces<a class="headerlink" href="#adding-repulsive-forces" title="Link to this heading">¶</a></h2>
 <p>Both examples are evaluated without any repulsive forces between the cells and
 the walls of the channel. To include repulsive forces, please refer to advanced
 case regarding <a class="reference internal" href="../advanced_cases/repulsion.html#repulsive-forces"><span class="std std-ref">repulsive forces</span></a>.</p>
@@ -185,14 +182,14 @@ case regarding <a class="reference internal" href="../advanced_cases/repulsion.h
         <li class="right" >
           <a href="pipeflow_with_preinlet.html" title="Pipe flow with periodic inflow"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.7 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">HemoCell 2.8 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../hemocell_cases.html" >Example cases</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Capillary flow</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, Computational Science Lab, University of Amsterdam.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    &#169; Copyright 2024, Computational Science Lab, University of Amsterdam.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>
